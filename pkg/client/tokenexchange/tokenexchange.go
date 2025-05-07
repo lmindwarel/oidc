@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/go-jose/go-jose/v4"
-	"github.com/zitadel/oidc/v3/pkg/client"
-	httphelper "github.com/zitadel/oidc/v3/pkg/http"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/client"
+	httphelper "github.com/lmindwarel/oidc/v3/pkg/http"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 )
 
 type TokenExchanger interface {

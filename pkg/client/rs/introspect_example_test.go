@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/zitadel/oidc/v3/pkg/client/rs"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/client/rs"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 )
 
 type IntrospectionResponse struct {

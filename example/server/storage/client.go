@@ -3,8 +3,8 @@ package storage
 import (
 	"time"
 
-	"github.com/zitadel/oidc/v3/pkg/oidc"
-	"github.com/zitadel/oidc/v3/pkg/op"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/op"
 )
 
 var (

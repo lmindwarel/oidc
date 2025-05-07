@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	tu "github.com/zitadel/oidc/v3/internal/testutil"
-	"github.com/zitadel/oidc/v3/pkg/client/rp"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
+	tu "github.com/lmindwarel/oidc/v3/internal/testutil"
+	"github.com/lmindwarel/oidc/v3/pkg/client/rp"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 )
 
 // MyCustomClaims extends the TokenClaims base,

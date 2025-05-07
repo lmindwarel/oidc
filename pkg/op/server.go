@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"net/url"
 
+	httphelper "github.com/lmindwarel/oidc/v3/pkg/http"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 	"github.com/muhlemmer/gu"
-	httphelper "github.com/zitadel/oidc/v3/pkg/http"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
 )
 
 // Server describes the interface that needs to be implemented to serve

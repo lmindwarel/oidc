@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
+	httphelper "github.com/lmindwarel/oidc/v3/pkg/http"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 	"github.com/muhlemmer/gu"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	httphelper "github.com/zitadel/oidc/v3/pkg/http"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
 	"github.com/zitadel/schema"
 )
 

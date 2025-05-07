@@ -15,14 +15,14 @@ import (
 	"go.opentelemetry.io/otel"
 	"golang.org/x/oauth2"
 
-	"github.com/zitadel/oidc/v3/pkg/crypto"
-	httphelper "github.com/zitadel/oidc/v3/pkg/http"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/crypto"
+	httphelper "github.com/lmindwarel/oidc/v3/pkg/http"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 )
 
 var (
 	Encoder = httphelper.Encoder(oidc.NewEncoder())
-	Tracer  = otel.Tracer("github.com/zitadel/oidc/pkg/client")
+	Tracer  = otel.Tracer("github.com/lmindwarel/oidc/pkg/client")
 )
 
 // Discover calls the discovery endpoint of the provided issuer and returns its configuration

@@ -14,9 +14,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zitadel/oidc/v3/pkg/client"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
-	"github.com/zitadel/oidc/v3/pkg/op"
+	"github.com/lmindwarel/oidc/v3/pkg/client"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/op"
 )
 
 func jwtProfile() (string, error) {

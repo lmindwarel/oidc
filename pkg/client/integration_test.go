@@ -23,14 +23,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/oauth2"
 
-	"github.com/zitadel/oidc/v3/example/server/exampleop"
-	"github.com/zitadel/oidc/v3/example/server/storage"
-	"github.com/zitadel/oidc/v3/pkg/client/rp"
-	"github.com/zitadel/oidc/v3/pkg/client/rs"
-	"github.com/zitadel/oidc/v3/pkg/client/tokenexchange"
-	httphelper "github.com/zitadel/oidc/v3/pkg/http"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
-	"github.com/zitadel/oidc/v3/pkg/op"
+	"github.com/lmindwarel/oidc/v3/example/server/exampleop"
+	"github.com/lmindwarel/oidc/v3/example/server/storage"
+	"github.com/lmindwarel/oidc/v3/pkg/client/rp"
+	"github.com/lmindwarel/oidc/v3/pkg/client/rs"
+	"github.com/lmindwarel/oidc/v3/pkg/client/tokenexchange"
+	httphelper "github.com/lmindwarel/oidc/v3/pkg/http"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/op"
 )
 
 var Logger = slog.New(

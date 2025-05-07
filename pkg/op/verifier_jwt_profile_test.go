@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
+	tu "github.com/lmindwarel/oidc/v3/internal/testutil"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/op"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	tu "github.com/zitadel/oidc/v3/internal/testutil"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
-	"github.com/zitadel/oidc/v3/pkg/op"
 )
 
 func TestNewJWTProfileVerifier(t *testing.T) {

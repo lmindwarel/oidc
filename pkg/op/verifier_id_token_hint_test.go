@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
+	tu "github.com/lmindwarel/oidc/v3/internal/testutil"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	tu "github.com/zitadel/oidc/v3/internal/testutil"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
 )
 
 func TestNewIDTokenHintVerifier(t *testing.T) {

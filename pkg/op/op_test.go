@@ -11,12 +11,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/lmindwarel/oidc/v3/example/server/storage"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/op"
 	"github.com/muhlemmer/gu"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/zitadel/oidc/v3/example/server/storage"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
-	"github.com/zitadel/oidc/v3/pkg/op"
 	"golang.org/x/text/language"
 )
 

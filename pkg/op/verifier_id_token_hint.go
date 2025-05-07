@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/zitadel/oidc/v3/pkg/oidc"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 )
 
 type IDTokenHintVerifier oidc.Verifier

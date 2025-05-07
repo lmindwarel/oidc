@@ -14,8 +14,8 @@ import (
 	"go.opentelemetry.io/otel"
 	"golang.org/x/text/language"
 
-	httphelper "github.com/zitadel/oidc/v3/pkg/http"
-	"github.com/zitadel/oidc/v3/pkg/oidc"
+	httphelper "github.com/lmindwarel/oidc/v3/pkg/http"
+	"github.com/lmindwarel/oidc/v3/pkg/oidc"
 )
 
 const (
@@ -96,7 +96,7 @@ var (
 	}
 )
 
-var tracer = otel.Tracer("github.com/zitadel/oidc/pkg/op")
+var tracer = otel.Tracer("github.com/lmindwarel/oidc/pkg/op")
 
 type OpenIDProvider interface {
 	http.Handler
