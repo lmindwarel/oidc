@@ -4,6 +4,7 @@ import (
 	"context"
 	"net/http"
 	"net/url"
+	"slices"
 	"strings"
 	"time"
 
@@ -375,8 +376,8 @@ func CreateTokenExchangeResponse(
 	defer span.End()
 
 	var (
-		token, refreshToken, tokenType string
-		validity                       time.Duration
+		tokenID, token, refreshToken, tokenType string
+		validity                                time.Duration
 	)
 
 	switch tokenExchangeRequest.GetRequestedTokenType() {
@@ -384,6 +385,11 @@ func CreateTokenExchangeResponse(
 		token, refreshToken, validity, err = CreateAccessToken(ctx, tokenExchangeRequest, client.AccessTokenType(), creator, client, "")
 		if err != nil {
 			return nil, err
+		}
+
+		if slices.Contains(tokenExchangeRequest.GetScopes(), oidc.ScopeOpenID) {
+			tokenID, err = CreateIDToken(ctx, IssuerFromContext(ctx), tokenExchangeRequest, client.IDTokenLifetime(), "", "", creator.Storage(), client)
+
 		}
 
 		tokenType = oidc.BearerToken
@@ -409,6 +415,7 @@ func CreateTokenExchangeResponse(
 		TokenType:       tokenType,
 		ExpiresIn:       exp,
 		RefreshToken:    refreshToken,
+		IDToken:         tokenID,
 		Scopes:          tokenExchangeRequest.GetScopes(),
 	}, nil
 }
