@@ -389,7 +389,9 @@ func CreateTokenExchangeResponse(
 
 		if slices.Contains(tokenExchangeRequest.GetScopes(), oidc.ScopeOpenID) {
 			tokenID, err = CreateIDToken(ctx, IssuerFromContext(ctx), tokenExchangeRequest, client.IDTokenLifetime(), "", "", creator.Storage(), client)
-
+			if err != nil {
+				return nil, err
+			}
 		}
 
 		tokenType = oidc.BearerToken
